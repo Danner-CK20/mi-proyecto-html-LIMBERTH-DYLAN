@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Galería virtual de arte estudiantil de la comunidad educativa de Comarapa.">
+    <title>Galería Virtual</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="encabezado">
+
+    <div class="marca">
+        🎨 Galería Virtual
+    </div>
+
+    <nav>
+
+        <a href="galeria.html">Inicio</a>
+
+        <a href="#filtroCategoria">Categorías</a>
+
+        <a href="galeria.html?vista=favoritos" id="enlaceFavoritos">Mis favoritos</a>
+
+        <button id="cerrarSesion">
+            Salir
+        </button>
+
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h1 id="tituloHero">Talento que merece ser visto</h1>
+
+    <p>
+        Descubre las creaciones artísticas de nuestros estudiantes.
+    </p>
+
+</section>
+
+
+<section class="zona-filtros">
+
+    <input
+        type="search"
+        id="buscador"
+        placeholder="Buscar por título o autor..."
+        aria-label="Buscar una obra"
+    >
+
+    <select id="filtroCategoria" aria-label="Filtrar por categoría">
+
+        <option value="todos">
+            Todas las categorías
+        </option>
+
+        <option value="dibujo">
+            Dibujo
+        </option>
+
+        <option value="pintura">
+            Pintura
+        </option>
+
+        <option value="musica">
+            Música
+        </option>
+
+        <option value="poesia">
+            Poesía
+        </option>
+
+        <option value="manualidades">
+            Manualidades
+        </option>
+
+    </select>
+
+</section>
+
+
+<div class="chips" id="chips" role="group" aria-label="Categorías"></div>
+
+<main>
+
+    <section
+        id="contenedorObras"
+        class="galeria"
+    >
+
+        <!-- Las obras se generan con JavaScript -->
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        Galería Virtual Estudiantil
+    </p>
+
+    <p>
+        Comunidad educativa de Comarapa
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Galería virtual de arte estudiantil de la comunidad educativa de Comarapa.">
+    <title>Registro | Galería Virtual</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<main class="contenedor-acceso">
+
+    <section class="tarjeta-acceso">
+
+        <h1>Crear una cuenta</h1>
+
+        <p class="subtitulo">
+            Regístrate para participar en nuestra galería artística.
+        </p>
+
+        <form id="formRegistro">
+
+            <div class="grupo-formulario">
+
+                <label for="nombre">Nombre</label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    autocomplete="name"
+                    placeholder="Ingrese su nombre"
+                    required
+                >
+
+            </div>
+
+            <div class="grupo-formulario">
+
+                <label for="curso">Curso</label>
+
+                <select id="curso" required>
+
+                    <option value="">
+                        Seleccione su curso
+                    </option>
+
+                    <option>1ro de Secundaria</option>
+                    <option>2do de Secundaria</option>
+                    <option>3ro de Secundaria</option>
+                    <option>4to de Secundaria</option>
+                    <option>5to de Secundaria</option>
+                    <option>6to de Secundaria</option>
+
+                </select>
+
+            </div>
+
+            <div class="grupo-formulario">
+
+                <label for="correoRegistro">
+                    Correo electrónico
+                </label>
+
+                <input
+                    type="email"
+                    id="correoRegistro"
+                    autocomplete="email"
+                    placeholder="ejemplo@correo.com"
+                    required
+                >
+
+            </div>
+
+            <div class="grupo-formulario">
+
+                <label for="passwordRegistro">
+                    Contraseña
+                </label>
+
+                <input
+                    type="password"
+                    id="passwordRegistro"
+                    autocomplete="new-password"
+                    placeholder="Mínimo 6 caracteres"
+                    minlength="6"
+                    required
+                >
+
+            </div>
+
+            <p id="mensajeError" class="mensaje-error" role="alert" aria-live="polite"></p>
+
+            <button
+                type="submit"
+                class="btn btn-principal"
+            >
+                Registrarme
+            </button>
+
+        </form>
+
+        <a href="index.html" class="enlace-volver">
+            ← Volver al inicio
+        </a>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

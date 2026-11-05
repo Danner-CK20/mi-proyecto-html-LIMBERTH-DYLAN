@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Galería virtual de arte estudiantil de la comunidad educativa de Comarapa.">
+    <title>Mis gustos artísticos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<main class="contenedor-preferencias">
+
+    <h1>¿Qué tipo de arte te gusta?</h1>
+
+    <p>
+        Selecciona una o varias categorías.
+    </p>
+
+    <div class="preferencias">
+
+        <button class="preferencia" data-categoria="dibujo">
+            ✏️
+            <span>Dibujo</span>
+        </button>
+
+        <button class="preferencia" data-categoria="pintura">
+            🎨
+            <span>Pintura</span>
+        </button>
+
+        <button class="preferencia" data-categoria="musica">
+            🎵
+            <span>Música</span>
+        </button>
+
+        <button class="preferencia" data-categoria="poesia">
+            📖
+            <span>Poesía</span>
+        </button>
+
+        <button class="preferencia" data-categoria="manualidades">
+            ✂️
+            <span>Manualidades</span>
+        </button>
+
+    </div>
+
+    <button
+        id="guardarPreferencias"
+        class="btn btn-principal"
+    >
+        Continuar
+    </button>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

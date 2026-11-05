@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Galería virtual de arte estudiantil de la comunidad educativa de Comarapa.">
+    <title>Detalle de la obra</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="encabezado">
+
+    <div class="marca">
+        🎨 Galería Virtual
+    </div>
+
+    <nav>
+        <a href="galeria.html">
+            ← Volver a la galería
+        </a>
+    </nav>
+
+</header>
+
+
+<main class="detalle-obra">
+
+    <img
+        id="imagenObra"
+        src="img/obras/paisaje.svg"
+        alt="Obra artística"
+    >
+
+    <section class="informacion-obra">
+
+        <span id="categoriaObra"
+              class="etiqueta">
+        </span>
+
+        <h1 id="tituloObra"></h1>
+
+        <p>
+            <strong>Autor:</strong>
+            <span id="autorObra"></span>
+        </p>
+
+        <p>
+            <strong>Curso:</strong>
+            <span id="cursoObra"></span>
+        </p>
+
+        <p id="descripcionObra"></p>
+
+        <div class="acciones">
+        <button
+            id="btnLike"
+            class="btn-like"
+            aria-pressed="false"
+        >
+            ❤️ Me gusta
+            (<span id="numeroLikes">0</span>)
+        </button>
+        <button id="btnCompartir" class="btn-compartir" type="button">🔗 Compartir</button>
+        </div>
+
+        <section class="comentarios">
+
+            <h2>Comentarios</h2>
+
+            <form id="formComentario">
+
+                <textarea maxlength="500"
+                    id="comentario"
+                    placeholder="Escribe un comentario respetuoso..."
+                    required
+                ></textarea>
+                <p class="contador"><span id="cuenta">0</span>/500</p>
+
+                <button
+                    type="submit"
+                    class="btn btn-principal"
+                >
+                    Comentar
+                </button>
+
+            </form>
+
+            <div id="listaComentarios" aria-live="polite"></div>
+
+        </section>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
